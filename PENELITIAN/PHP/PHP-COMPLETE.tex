@@ -1,0 +1,264 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=3.00cm, right=3.00cm, top=3.00cm, bottom=3.00cm]{geometry}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{listings,xcolor}
+\usepackage{inconsolata}
+
+\definecolor{dkgreen}{rgb}{0,.6,0}
+\definecolor{dkblue}{rgb}{0,0,.6}
+\definecolor{dkyellow}{cmyk}{0,0,.8,.3}
+
+\usepackage{color}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\lstset{
+	language        = php,
+	basicstyle      = \Large\ttfamily,
+	keywordstyle    = \color{dkblue},
+	stringstyle     = \color{red},
+	identifierstyle = \color{dkgreen},
+	commentstyle    = \color{gray},
+	emph            =[1]{php},
+	emphstyle       =[1]\color{black},
+	emph            =[2]{if,and,or,else},
+	emphstyle       =[2]\color{dkyellow},
+	backgroundcolor	=\color{backcolour},   
+	commentstyle	=\color{codegreen},
+	keywordstyle	=\color{magenta},
+	numberstyle		=\tiny\color{codegray},
+	stringstyle		=\color{codepurple},
+	basicstyle		=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+	}
+
+\usepackage{ifpdf}
+\usepackage{verbatim}
+
+\ifpdf
+\usepackage{framed,color}
+\definecolor{shadecolor}{gray}{0.9}
+
+\newenvironment{code}%
+{\snugshade\verbatim}%
+{\endverbatim\endsnugshade}
+
+\else
+
+\newenvironment{code}
+{\HCode{<div class='code'>}\verbatim}
+{\endverbatim\HCode{</div>}}
+
+\fi
+
+
+\author{Balya Rochmadi}
+\title{PHP-COMPLETE}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\Large
+	\chapter{Variabel dan Variabel Superglobal}
+
+	\chapter{\textit{Class} dalam PHP}
+	
+	\section{Definisi Kelas dan Objek}
+	
+	\paragraph{}
+	
+	Seperti halnya bahasa pemrograman berbasis objek yang lain, dalam PHP juga dikenal memiliki kelas. Kelas adalah definisi dari sebuah objek. Objek sendiri adalah representasi dari sebuah kelas. Dalam kehidupan nyata Objek dapat berupa benda yang memiliki karakteristik khusus. Misalkan meja makan, memiliki karakteristik meja dan digunakan untuk makan. 
+	
+	Dalam PHP kita dapat menulis kelas sebagai berikut dengan keyword \textit{class}
+	
+	\begin{lstlisting}
+		class Meja{
+		}
+		class Konsumen{
+		}
+	\end{lstlisting}
+	\par
+	Kelas didefinisikan dengan menggunakan kata kunci (\textit{keyword}) \textit{class} diikuti oleh nama kelas. Sedangkan untuk implementasinya diperlukan variabel yang di\textit{assign} oleh \textit{instantinasi} kelas. Berikut ini adalah kelas yang di \textit{instanitasikan}. Hasil dari \textit{instantinasi} tersebut adalah sebuah objek.
+	\begin{lstlisting}
+		$meja1= new Meja();
+		$konsumen1= new Konsumen();
+	\end{lstlisting}
+		 \textit{Asignasi} variabel tersebut terhadap \textit{instansi} dari objek sama dengan \textit{asignasi} nilai primitif PHP seperti \textit{integer,float} atau \textit{string}. \textit{Instantinasi} dari sebuah kelas dapat berlangsung berkali-kali dan menghasilkan objek-objek yang berbeda.
+	\begin{lstlisting}
+		$meja2 = new Meja();
+		$konsumen2 = new Konsumen();
+	\end{lstlisting}
+		Untuk dapat melihat hasil dari proses \textit{instantinasi} dan \textit{asignasi} dari kelas tersebut kita dapat menggunakan fungsi php \textit{var\_dump}()
+	\begin{lstlisting}
+		var_dump($meja1);
+		var_dump($meja2);
+		var_dump($konsumen1);
+		var_dump($konsumen2);
+	\end{lstlisting}
+		\par Seperti yang kita ketahui bersama jika \textit{var\_dump}() menghasilkan \textit{array} dari objek tersebut. Karena dalam objek yang kita buat sebelumnya tidak memiliki metode, sehingga hasil dari \textit{var\_dump} adalah sebagai berikut :
+	
+	\small
+	\begin{code}
+		Output:
+	
+		class Meja#1 (0) {
+		}
+	
+		class Meja#2 (0) {
+		}
+	
+		class Konsumen#3 (0) {
+		}
+	
+		class Konsumen#4 (0) {
+		}
+	\end{code}
+	\Large
+	\par
+	Dalam output tersebut terdapat empat objek yang ditandai oleh "\#". Belum terdapat metode ataupun properti yang didefinisikan dalam kelas-kelas tersebut sehingga \textit{array length} dari objek tersebut masih nol.
+	
+	\section{Metode dan Properti Kelas}
+	Misalkan dalam \textit{Meja} dan \textit{Konsumen} tersebut memiliki karakteristik tertentu, maka kita dapat menambahkan metode dan properti dalam definisi kelasnya. Contoh dibawah ini adalah penambahan properti pada kelas Meja dan Konsumen dengan nilai \textit{default};
+	
+	\begin{lstlisting}
+		class Meja{
+			public $jumlahkaki =	4;
+			public $warna      =	"coklat";
+			public $bentuk     =	"lingkaran";
+			public $diameter   =	7;
+			
+		}
+		
+		class Konsumen{
+			public $nama    = "Eddy";
+			public $Alamat	= "Jalan Pasar Kembang";
+			public $JenisKelamin   ="Laki-Laki";
+		
+		}
+		
+	\end{lstlisting}
+	
+	Untuk dapat menggunakan data yang terdapat pada kelas-kelas diatas, diperlukan \textit{asignasi} dan \textit{instantinasi} pada variabel.Pada contoh diatas terdapat \textit{keyword} visibilitas yaitu \textit{public}. \textit{Keyword} ini digunakan agar properti kelas dapat diakses oleh objek/kelas lain diluar kelas.
+	Berikut ini adalah contoh yang dapat diterapkan. 
+	\begin{lstlisting}
+		$meja1=new Meja();
+		echo "Jumlah kaki meja adalah: ".$meja1->jumlahkaki.PHP_EOL; //mengambil nilai jumlahkaki
+		$meja1->jumlahkaki=10; //mengganti properti jumlahkaki
+		echo "Jumlah kaki meja yang baru: ".$meja1->jumlahkaki.PHP_EOL;
+	\end{lstlisting}
+	Jika ingin mengetahui isi dari kelas tersebut kita dapat menggunakan \textit{var\_dump}(). 
+	\begin{lstlisting}
+			$meja1=new Meja();
+			var_dump($meja1);
+			echo "Jumlah kaki meja adalah: ".$meja1->jumlahkaki.PHP_EOL; //mengambil nilai jumlahkaki
+			$meja1->jumlahkaki=10; //mengganti properti jumlahkaki
+			var_dump($meja1);
+			echo "Jumlah kaki meja yang baru: ".$meja1->jumlahkaki.PHP_EOL;
+	\end{lstlisting}
+	
+	Output dari variabel \text{\$meja1} adalah sebagai berikut:
+	\small
+	\begin{code}
+	:
+		class Meja#1 (4) {
+		public $jumlahkaki =>
+		int(4)
+		public $warna =>
+		string(6) "coklat"
+		public $bentuk =>
+		string(9) "lingkaran"
+		public $diameter =>
+		int(7)
+		}
+		Jumlah kaki meja adalah: 4
+		
+		
+		class Meja#1 (4) {
+		public $jumlahkaki =>
+		int(10)
+		public $warna =>
+		string(6) "coklat"
+		public $bentuk =>
+		string(9) "lingkaran"
+		public $diameter =>
+		int(7)
+		}
+		Jumlah kaki meja yang baru: 10
+		
+	\end{code}
+	\Large
+
+	Perlu diingat bahwa objek-objek yang telah diinstantinasi masing-masing menempati ruang berbeda di virtual memori sehingga 
+	perubahan pada objek satu sama lain saling \textit{mutually exclusive} /independen. Berikut ini adalah contoh dua objek dengan kelas yang sama
+	\begin{lstlisting}
+		$konsumen1=new Konsumen();
+		$konsumen2=new Konsumen();
+		
+		$konsumen1->nama="Robert Downey Jr";
+		$konsumen1->Alamat="NYC";
+		var_dump($konsumen1);
+		
+		$konsumen2->nama="Peter Parker";
+		$konsumen2->Alamat="Queens";
+		var_dump($konsumen2);
+		
+		
+	\end{lstlisting}
+	
+	Output dari kode tersebut adalah sebagai berikut:
+	\small
+	\begin{code}
+		
+		class Konsumen#2 (3) {
+			public $nama =>
+			string(16) "Robert Downey Jr"
+			public $Alamat =>
+			string(3) "NYC"
+			public $JenisKelamin =>
+			string(9) "Laki-Laki"
+		}
+	
+		class Konsumen#3 (3) {
+			public $nama =>
+			string(12) "Peter Parker"
+			public $Alamat =>
+			string(6) "Queens"
+			public $JenisKelamin =>
+			string(9) "Laki-Laki"
+		}
+		
+	\end{code}
+	\Large
+	\par
+	Dapat dilihat bahwa \$konsumen1 dan \$konsumen2 adalah 2 objek yang berbeda dan \$konsumen1 menempat objek Konsumen\#2 dan sama sekali tidak mempengaruhi \$konsumen2 yang memnempati objek Konsumen\#2. Objek juga akan berbeda jika berada pada skrip php yang berbeda walaupun memiliki nama yang sama, hal ini dikarenakan php melakukan \textit{freeing}/pembebasan memori setelah eksekusi skrip. Maka dari itu untuk mempertahankan nilai baik yang berupa objek ataupun properti agar tetap dapat digunakan oleh skrip php yang lain pemanfaatan variabel \textit{superglobals} seperti \$\_COOKIE, ataupun \$\_SESSION diperlukan.
+	\par
+	Properti saja tidaklah cukup, karakteristik bawaan dari objek yang lain adalah metode objek. Metode adalah fungsi yang menjadi representasi dari aksi sebuah kelas. Berikut ini adalah karakterisitik dari metode:
+	\begin{enumerate}
+		\item merupakan fungsi;
+		\item dapat menerima nilai ataupun \textit{void}
+		\item dapat menghasilkan return nilai yang lain
+		\item Untuk PHP 7.0 fungsi dapat memiliki  
+	\end{enumerate}
+	
+	
+	
+	
+\end{document}

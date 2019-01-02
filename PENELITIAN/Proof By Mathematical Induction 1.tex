@@ -1,0 +1,26 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\title{Bukti bahwa $2^n \geq n!$ Menggunakan Induksi Matematika}
+\author{Balya Rochmadi}
+\begin{document}
+	\maketitle
+	Pertama sebelum dilakukan pembuktian domain yang dimaksud adalah $\{n \geq 0\}$.
+	Asumsikan bahwa $n=k$ maka $2^k \geq k!$. Sehingga jika $n=k+1$ maka $2^{k+1}\geq (k+1)!$ dengan $n=k\geq 0$. Jadi $2^{k+1}-(k+1)!\geq 0 $. Perlu diingat bahwa dengan adanya $2^k \geq k!$, berarti,\\
+\begin{center}
+$2^{k+1}-(k+1)!=2\cdot2^k-(k+1)! > 2\cdot k!-(k+1)!$\medskip \\
+$2^{k+1}-(k+1)!\geq 2\cdot k!-(k+1)!$\medskip \\
+$2^{k+1}-(k+1)!\geq 2\cdot k!-(k+1)k!$\medskip \\
+$2^{k+1}-(k+1)!\geq 2\cdot (1-(k+1))k!$\medskip \\
+$2^{k+1}-(k+1)!\geq 2\cdot (k)k!$\medskip \\
+\end{center}
+karena sisi kanan dari pertidaksamaan tersebut bernilai positif, ingat bahwa $k=n\geq  0$, maka terbukti bahwa $2^{k+1}-(k+1)!\geq 0 $ atau $2^k \geq k!$, dan persamaan ditunjukkan jika dan hanya jika $k=0$. 	  						
+	  						
+\end{document}

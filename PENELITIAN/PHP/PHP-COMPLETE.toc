@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}Variabel dan Variabel Superglobal}{5}
+\contentsline {chapter}{\numberline {2}\textit {Class} dalam PHP}{7}
+\contentsline {section}{\numberline {2.1}Definisi Kelas dan Objek}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{\numberline {2.2}Metode dan Properti Kelas}{9}

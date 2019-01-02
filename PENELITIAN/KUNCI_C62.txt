@@ -1,0 +1,40 @@
+D
+C
+15:20:8 -> 7/43 * 129 = 21
+D
+B
+C
+A
+C
+D
+B
+B= -1
+A
+C
+C
+D
+A
+A
+D
+A
+D apel=x jeruk=y x-y=5000 ; 5y+4x
+D
+C
+B
+C
+A
+A
+B
+C dan D
+A
+D
+D
+3528
+D
+D
+D
+B
+C
+B
+D
+C

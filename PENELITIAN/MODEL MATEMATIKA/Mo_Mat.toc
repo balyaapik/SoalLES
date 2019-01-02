@@ -1,0 +1,119 @@
+\select@language {bahasa}
+\contentsline {chapter}{\numberline {1}Bilangan Dan Teori Bilangan}{5}
+\contentsline {section}{\numberline {1.1}Bilangan Bulat}{5}
+\contentsline {paragraph}{MODEL SOAL UNBK 2017/2018}{6}
+\contentsline {section}{\numberline {1.2}Keterbagian}{6}
+\contentsline {paragraph}{Model Soal UNBK 2017/2018}{7}
+\contentsline {section}{\numberline {1.3}Bilangan Pecahan}{8}
+\contentsline {paragraph}{Operasi Pecahan Campuran (Desimal dan Biasa)}{8}
+\contentsline {section}{\numberline {1.4}Bilangan Prima}{9}
+\contentsline {section}{\numberline {1.5}FPB dan KPK}{10}
+\contentsline {paragraph}{Faktor Persekutuan Terbesar}{10}
+\contentsline {paragraph}{Kelipatan Persekutuan Terkecil}{10}
+\contentsline {paragraph}{Faktorisasi Prima}{10}
+\contentsline {section}{\numberline {1.6}Analisis BAB}{10}
+\contentsline {section}{\numberline {1.7}Kelemahan Siswa}{10}
+\contentsline {chapter}{\numberline {2}Perbandingan dan Skala}{11}
+\contentsline {section}{\numberline {2.1}Perbandingan}{11}
+\contentsline {subsection}{\numberline {2.1.1}Perhitungan Perbandingan}{11}
+\contentsline {section}{\numberline {2.2}Skala}{12}
+\contentsline {subsection}{\numberline {2.2.1}Perhitungan Skala}{12}
+\contentsline {section}{\numberline {2.3}Perbandingan Lebih dari 2 pembanding}{13}
+\contentsline {subsection}{\numberline {2.3.1}Penggabungan Dua Perbandingan atau lebih menjadi Perbandingan lebih dari dua}{13}
+\contentsline {section}{\numberline {2.4}Variasi}{13}
+\contentsline {subsection}{\numberline {2.4.1}Variasi Berbanding Lurus}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {subsection}{\numberline {2.4.2}Variasi Berbanding Terbalik}{14}
+\contentsline {chapter}{\numberline {3}Pangkat dan Akar}{15}
+\contentsline {section}{\numberline {3.1}Bilangan Pangkat}{15}
+\contentsline {subsection}{\numberline {3.1.1}Sifat Pangkat}{15}
+\contentsline {subsection}{\numberline {3.1.2}Contoh soal yang berkaitan dengan sifat Pangkat}{15}
+\contentsline {section}{\numberline {3.2}Bilangan Akar }{15}
+\contentsline {subsection}{\numberline {3.2.1}Sifat Akar}{15}
+\contentsline {section}{\numberline {3.3}Rasionalisasi Bilangan Pecahan}{16}
+\contentsline {section}{\numberline {3.4}Penyederhanaan Bilangan Akar campuran}{16}
+\contentsline {section}{\numberline {3.5}Notasi Ilmiah}{16}
+\contentsline {section}{\numberline {3.6}Modulus dan Pangkat}{16}
+\contentsline {section}{\numberline {3.7}Akar Rekursif}{16}
+\contentsline {chapter}{\numberline {4}Barisan dan Deret}{17}
+\contentsline {section}{\numberline {4.1}Pola Barisan dan Deret}{17}
+\contentsline {subsection}{\numberline {4.1.1}Pola Barisan Aritmatika}{17}
+\contentsline {subsection}{\numberline {4.1.2}Pola Barisan Geometrik}{17}
+\contentsline {section}{\numberline {4.2}Barisan Aritmatik}{17}
+\contentsline {section}{\numberline {4.3}Deret Aritmatik}{17}
+\contentsline {section}{\numberline {4.4}Barisan Geometrik}{17}
+\contentsline {section}{\numberline {4.5}Deret Geometrik}{17}
+\contentsline {section}{\numberline {4.6}Barisan Harmonik}{17}
+\contentsline {section}{\numberline {4.7}Deret Harmonik}{17}
+\contentsline {section}{\numberline {4.8}Deret Bertingkat}{17}
+\contentsline {subsection}{\numberline {4.8.1}Aritmatik Bertingkat}{17}
+\contentsline {subsection}{\numberline {4.8.2}Deret Geometrik Bertingkat}{17}
+\contentsline {subsection}{\numberline {4.8.3}Deret Harmonik Bertingkat}{17}
+\contentsline {chapter}{\numberline {5}Bentuk Aljabar}{18}
+\contentsline {section}{\numberline {5.1}Nilai Absolut}{18}
+\contentsline {section}{\numberline {5.2}Ekspresi Linier}{18}
+\contentsline {section}{\numberline {5.3}Ekspresi Kuadrat}{18}
+\contentsline {section}{\numberline {5.4}Ekspresi Polinomial Derajat $>2$}{18}
+\contentsline {section}{\numberline {5.5}Ekspresi Pecahan Rasional}{18}
+\contentsline {section}{\numberline {5.6}Ekspresi Imajiner}{18}
+\contentsline {chapter}{\numberline {6}Persamaan}{19}
+\contentsline {section}{\numberline {6.1}Persamaan Linier/Garis Lurus}{19}
+\contentsline {section}{\numberline {6.2}Persamaan Kuadrat}{19}
+\contentsline {section}{\numberline {6.3}Persamaan Pecahan Rasional}{19}
+\contentsline {section}{\numberline {6.4}Persamaan Campuran}{19}
+\contentsline {section}{\numberline {6.5}Persamaan Garis Lurus}{19}
+\contentsline {section}{\numberline {6.6}Persamaan Lingkaran}{19}
+\contentsline {chapter}{\numberline {7}Pertidaksamaan}{20}
+\contentsline {section}{\numberline {7.1}Pertidaksamaan linier}{20}
+\contentsline {section}{\numberline {7.2}Pertidaksamaan kuadrat}{20}
+\contentsline {section}{\numberline {7.3}Pertidasamaan Absolut}{20}
+\contentsline {section}{\numberline {7.4}Pertidaksamaan AM-GM-HM}{20}
+\contentsline {chapter}{\numberline {8}Himpunan}{21}
+\contentsline {section}{\numberline {8.1}Teori Himpunan}{21}
+\contentsline {section}{\numberline {8.2}Himpunan dan Peluang}{21}
+\contentsline {chapter}{\numberline {9}Fungsi dan Relasi}{22}
+\contentsline {section}{\numberline {9.1}Relasi}{22}
+\contentsline {section}{\numberline {9.2}Fungsi}{22}
+\contentsline {section}{\numberline {9.3}Fungsi Linier}{22}
+\contentsline {section}{\numberline {9.4}Fungsi Kuadrat}{22}
+\contentsline {section}{\numberline {9.5}Fungsi Rasional}{22}
+\contentsline {chapter}{\numberline {10}Aljabar Linier Dasar}{23}
+\contentsline {section}{\numberline {10.1}Bentuk Aljabar Linier}{23}
+\contentsline {section}{\numberline {10.2}Penyelesaian Aljabar Linier dua persamaan}{23}
+\contentsline {section}{\numberline {10.3}Matriks}{23}
+\contentsline {section}{\numberline {10.4}Penyelesaian Aljabar Linier lebih dari dua persamaan dengan Matriks}{23}
+\contentsline {section}{\numberline {10.5}Pemrograman Linier}{23}
+\contentsline {chapter}{\numberline {11}Geometri}{24}
+\contentsline {section}{\numberline {11.1}Garis dan Sudut}{24}
+\contentsline {section}{\numberline {11.2}Segitiga}{24}
+\contentsline {section}{\numberline {11.3}Segi empat dan Segi $> 4$}{24}
+\contentsline {section}{\numberline {11.4}Lingkaran}{24}
+\contentsline {section}{\numberline {11.5}Bangun datar gabungan}{24}
+\contentsline {section}{\numberline {11.6}Prisma}{24}
+\contentsline {section}{\numberline {11.7}Limas}{24}
+\contentsline {section}{\numberline {11.8}Bola}{24}
+\contentsline {section}{\numberline {11.9}Bangun Ruang Gabungan}{24}
+\contentsline {chapter}{\numberline {12}Trigonometri Dasar}{25}
+\contentsline {section}{\numberline {12.1}Sudut dan Radian}{25}
+\contentsline {section}{\numberline {12.2}Trigonometri Segitiga Kanan}{25}
+\contentsline {section}{\numberline {12.3}Trigonometri Unit Lingkaran}{25}
+\contentsline {section}{\numberline {12.4}Identitas Trigonometri}{25}
+\contentsline {chapter}{\numberline {13}Kesebangunan dan Kongruensi}{26}
+\contentsline {section}{\numberline {13.1}Kesebangunan Segitiga}{26}
+\contentsline {section}{\numberline {13.2}Kongruensi Segitiga}{26}
+\contentsline {subsection}{\numberline {13.2.1}Kongruensi karena SSS}{26}
+\contentsline {subsection}{\numberline {13.2.2}Kongruensi karena ASA}{26}
+\contentsline {subsection}{\numberline {13.2.3}Kongruensi karena SAS}{26}
+\contentsline {subsection}{\numberline {13.2.4}Kongruensi karena HL}{26}
+\contentsline {chapter}{\numberline {14}Statistika}{27}
+\contentsline {section}{\numberline {14.1}Statistika Diskriptif}{27}
+\contentsline {section}{\numberline {14.2}Penggambaran Datar}{27}
+\contentsline {section}{\numberline {14.3}Mean/Rata-Rata}{27}
+\contentsline {section}{\numberline {14.4}Median}{27}
+\contentsline {section}{\numberline {14.5}Modus}{27}
+\contentsline {chapter}{\numberline {15}Kombinatorik}{28}
+\contentsline {section}{\numberline {15.1}Aturan Perkalian}{28}
+\contentsline {section}{\numberline {15.2}Permutasi}{28}
+\contentsline {section}{\numberline {15.3}Kombinasi}{28}
+\contentsline {section}{\numberline {15.4}Aturan Penjumlahan}{28}
+\contentsline {section}{\numberline {15.5}Peluang}{28}
